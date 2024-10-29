@@ -148,7 +148,7 @@ def compute_median(data_dict):
     return result
 
 
-def income_info(zipcode: int, filename = './Data/20zpallagi.csv'):
+def income_info(zipcode: int, filename = './Data/IRSData.csv'):
     '''
     Executes the core functionality of the program
     
