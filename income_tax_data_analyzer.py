@@ -183,7 +183,7 @@ def usage():
     
 def main():
     
-    st.title("Mean and Median income calculator from IRS data.")
+    st.title("Median income calculator by zipcode from IRS data.")
     # Take user input
     zipcode = st.text_input("Enter a valid zipcode")
     if bool(zipcode):
@@ -191,7 +191,6 @@ def main():
         zip, mean, median = income_info(int(zipcode))
         print(mean, median)
         st.write(f"Income at zipcode {zipcode}:")
-        st.write(f"Mean: \\${mean:,.2f}")
         st.write(f"Median: \\${median:,.2f}")
     
     
