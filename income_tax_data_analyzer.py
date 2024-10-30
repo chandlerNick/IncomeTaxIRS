@@ -190,8 +190,7 @@ def main():
         # Compute the mean and median income
         zip, mean, median = income_info(int(zipcode))
         print(mean, median)
-        st.write(f"Income at zipcode {zipcode}:")
-        st.write(f"Median: \\${median:,.2f}")
+        st.write(f"Median income at zipcode {zipcode}: \\${median:,.2f}")
     
     
 
